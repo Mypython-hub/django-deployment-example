@@ -1,0 +1,92 @@
+
+github details:
+madhusmitapattanayak@gmail.com
+mygithub55
+
+- goto www.github.com and signup for an account
+- signin to your github account
+- create a new repository then use command line or other options to create it
+- download git or if you have already downloaded then on commandline type
+  $ git --version  it will show you the which version of Git you have.
+
+Git is a version Control System (VCS) for tracing changes in computer files.
+$ clear                     // clears the screen
+Basic Git commands:
+$ git init                  // Initialize Local Git Repository
+$ git add<file>             //Add file(s) to Index
+$ git add.                  // to add all the files
+$ git status                // Check status of Working Tree
+$ git commit                // Commit changes in Index
+
+Commands for Remote Repository (Ex. Github, Bitbucket):
+$ git push               // Push to remote Repository
+$ git pull                 // Pull the latest from Remote repository
+$ git clone             //Clone the remote repository into a new directory(your local repository)
+
+https://www.youtube.com/watch?v=SWYqp7iY_Tc     (youtube video link)
+Step 1:
+Download and install git from   	https://git-scm.com/
+Hold ctr and scroll to make the font inside a gitbash window to big or small
+In command line (cmd ) window or gitbash window type
+$ git –version    //show the version of the git
+Create a project t(create a folder(myapp) on desktop )
+Create couple of file in myapp folder(you can create using file manager too)
+$ touch index.html                       // creates index.html file in myapp folder
+$ touch app.js                               // creates app.js file in myapp folder
+Open up Atom or sublime text (these are file manager)
+Create an html file then
+-	Initialize a git repository by using:
+$ git init    command
+-	Add your credentials to the git repository
+$ git config --global user.name ‘Madhusmita Pattanayak’
+$ git config --global user.email ‘madhusmitapattanayak@gmail.com’
+
+$ git add index.html                                   // it will add the index.html file to the staging area for commit
+$ git status                                                  // this will show the status of the file
+$ git rm –cached index.html                   // it will remove the index.html file from the staging area
+$ git add *.html                                       // it will add all .html files to the staging area for commit
+$ git rm –cached *.html                      // it will remove all .html file from the staging area
+$ git add .                                               // it will add all the files to the staging area for commit
+
+-	Commit a file:
+$ git commit                                       // it will commit the file
+It will open a Vim editor. To type into the editor press i. Then type your comment for the commit.    (anything with a # sign in front of a line in Vim editor is treaded as commented line).
+And to get out of the insert mode press escape key and type :wq at the bottom of the window.
+-	Check the status again:
+$ git status
+-	Commit a file without going to Vim editor:
+$ git add .
+$ git commit -m ‘changes index.html ’
+-	Create new files in myapp folder:
+$ touch. gitignore
+$ touch log.txt
+
+-	How to Ignore file while doing commit:
+Put the file name inside the. gitignore file
+
+-	How to Create a new Branch & get into it in the Repository:
+$ git branch login
+$ git checkout login
+
+-	How to merge files and changes from a branch into the master:
+$ git merge login                   \\ this will merge the changes of login branch to the master
+
+-	How to connect to the remote Repository:
+$ git remote add origin https://github.com/mtpython-hub/myappsample.git
+
+
+-	How to push changes to the remote Repository:
+	$ git push -u origin master
+-	How to create a readme.md file in the remote Repository:
+	$ touch readme .md
+	$ git add .
+	$ git commit -m ‘comment’
+	$ git push
+	Refresh the github page
+
+-	How to pull changes from the remote Repository:
+o	$ git pull
+-
+
+-
+-
